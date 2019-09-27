@@ -1,1 +1,56 @@
 // Navigation Styles here
+
+//nav bar
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 2rem;
+
+    @media @mobile {
+        display: block;
+    }
+
+    h1{
+        @media @mobile {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+
+    ul{
+        display: flex;
+
+        @media @mobile {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    li {
+        margin-left: 3rem;
+
+        @media @mobile {
+            margin-left: 0rem;
+        }
+    }
+
+    a {
+        display: flex;
+        text-decoration: none;
+        color: @font-color;
+        font-size: @nav-text;
+
+        @media @mobile {
+            margin-left: 7rem;
+            position: relative;
+            right: 4rem;
+        }
+    }
+    
+}
+// nav bar end 
